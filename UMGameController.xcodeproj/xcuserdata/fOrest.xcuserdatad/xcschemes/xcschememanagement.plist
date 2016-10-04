@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>UMGameController-Mac.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>UMGameController.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>850153791D0ED70100225562</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>850153911D0ED70100225562</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8501539C1D0ED70100225562</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8501544C1D110E6600225562</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8501545F1D110E6600225562</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8501546A1D110E6600225562</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>85634D531D9A615D00253A31</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>857720041D659A4B0011CA71</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8577201B1D65A2D80011CA71</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

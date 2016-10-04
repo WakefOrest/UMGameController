@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8501537E1D0ED70100225562 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8501537D1D0ED70100225562 /* AppDelegate.swift */; };
+		850153801D0ED70100225562 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8501537F1D0ED70100225562 /* GameScene.sks */; };
+		850153821D0ED70100225562 /* GameScene backup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850153811D0ED70100225562 /* GameScene backup.swift */; };
+		850153841D0ED70100225562 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850153831D0ED70100225562 /* GameViewController.swift */; };
+		850153871D0ED70100225562 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 850153851D0ED70100225562 /* Main.storyboard */; };
+		850153891D0ED70100225562 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 850153881D0ED70100225562 /* Assets.xcassets */; };
+		8501538C1D0ED70100225562 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8501538A1D0ED70100225562 /* LaunchScreen.storyboard */; };
+		850153C71D0EDC6600225562 /* UMMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850153C61D0EDC6600225562 /* UMMessage.swift */; };
+		850153C91D0EDC9000225562 /* UMBonjourBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850153C81D0EDC9000225562 /* UMBonjourBrowser.swift */; };
+		850154481D100E0C00225562 /* UMBonjourServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850154471D100E0C00225562 /* UMBonjourServer.swift */; };
+		850154501D110E6600225562 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8501544F1D110E6600225562 /* AppDelegate.swift */; };
+		850154521D110E6600225562 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850154511D110E6600225562 /* ViewController.swift */; };
+		850154551D110E6600225562 /* UMGameController_Mac.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 850154531D110E6600225562 /* UMGameController_Mac.xcdatamodeld */; };
+		850154571D110E6600225562 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 850154561D110E6600225562 /* Assets.xcassets */; };
+		8501547B1D11102000225562 /* UMBonjourBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850153C81D0EDC9000225562 /* UMBonjourBrowser.swift */; };
+		8501547C1D11102400225562 /* UMMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850153C61D0EDC6600225562 /* UMMessage.swift */; };
+		8501547D1D11102800225562 /* UMBonjourServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850154471D100E0C00225562 /* UMBonjourServer.swift */; };
+		850154801D13FA0C00225562 /* UMBonjourConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8501547F1D13FA0C00225562 /* UMBonjourConnection.swift */; };
+		850154811D13FA0C00225562 /* UMBonjourConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8501547F1D13FA0C00225562 /* UMBonjourConnection.swift */; };
+		850161811D2E1CEA0089102E /* UMGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850161801D2E1CEA0089102E /* UMGameController.swift */; };
+		85061E451D5836D900C1B870 /* UMCBCentral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85061E441D5836D900C1B870 /* UMCBCentral.swift */; };
+		85061E461D5836D900C1B870 /* UMCBCentral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85061E441D5836D900C1B870 /* UMCBCentral.swift */; };
+		851751031D533F1200E633F9 /* UMVHIDDevice_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 851751011D533A7700E633F9 /* UMVHIDDevice_iOS.framework */; };
+		851751041D533F1200E633F9 /* UMVHIDDevice_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 851751011D533A7700E633F9 /* UMVHIDDevice_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		855DF2081D52F54E002A5766 /* UMCBPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855DF2041D438770002A5766 /* UMCBPeripheral.swift */; };
+		855DF20D1D52F847002A5766 /* UMCBPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855DF2041D438770002A5766 /* UMCBPeripheral.swift */; };
+		85634D621D9B77F900253A31 /* UMVHIDDevice_Mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85634D611D9B77F900253A31 /* UMVHIDDevice_Mac.framework */; };
+		85634D641D9B780300253A31 /* UMVHIDDevice_Mac.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 855DF21B1D532A3B002A5766 /* UMVHIDDevice_Mac.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		85634D671D9F84AC00253A31 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85634D661D9F84AC00253A31 /* UserData.swift */; };
+		8564A5FB1D3B5D1D00B25C13 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8564A5FA1D3B5D1D00B25C13 /* MenuScene.swift */; };
+		8577202D1D65A32D0011CA71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8577202B1D65A32D0011CA71 /* Main.storyboard */; };
+		8591EED51D30E5A0000C9469 /* UMGameControllerButtonMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8591EED41D30E5A0000C9469 /* UMGameControllerButtonMap.swift */; };
+		8591EED61D30E5A0000C9469 /* UMGameControllerButtonMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8591EED41D30E5A0000C9469 /* UMGameControllerButtonMap.swift */; };
+		8591EED81D310CC6000C9469 /* AnalogJoystick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8591EED71D310CC6000C9469 /* AnalogJoystick.swift */; };
+		8591EEDB1D310D72000C9469 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8591EEDA1D310D71000C9469 /* GameScene.swift */; };
+		85C3A2C61D55DA190053EE38 /* CBUUIDS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C3A2C51D55DA190053EE38 /* CBUUIDS.swift */; };
+		85C3A2C71D55DA190053EE38 /* CBUUIDS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C3A2C51D55DA190053EE38 /* CBUUIDS.swift */; };
+		85C7B7BB1D6819E900D98C6E /* UMMessage.backup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7B7BA1D6819E900D98C6E /* UMMessage.backup.swift */; };
+		85C7B7BC1D6819E900D98C6E /* UMMessage.backup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7B7BA1D6819E900D98C6E /* UMMessage.backup.swift */; };
+		85D331B51D36486100D2618C /* UMSKNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D331B41D36486100D2618C /* UMSKNode.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		851751051D533F1200E633F9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				851751041D533F1200E633F9 /* UMVHIDDevice_iOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85634D5F1D9B77D300253A31 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				85634D641D9B780300253A31 /* UMVHIDDevice_Mac.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8501537A1D0ED70100225562 /* UMGameController_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UMGameController_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8501537D1D0ED70100225562 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8501537F1D0ED70100225562 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		850153811D0ED70100225562 /* GameScene backup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameScene backup.swift"; sourceTree = "<group>"; };
+		850153831D0ED70100225562 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		850153861D0ED70100225562 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		850153881D0ED70100225562 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8501538B1D0ED70100225562 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8501538D1D0ED70100225562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		850153C61D0EDC6600225562 /* UMMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UMMessage.swift; sourceTree = "<group>"; };
+		850153C81D0EDC9000225562 /* UMBonjourBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UMBonjourBrowser.swift; sourceTree = "<group>"; };
+		850154471D100E0C00225562 /* UMBonjourServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UMBonjourServer.swift; sourceTree = "<group>"; };
+		8501544D1D110E6600225562 /* UMGameController_Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UMGameController_Mac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8501544F1D110E6600225562 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		850154511D110E6600225562 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		850154541D110E6600225562 /* UMGameController_Mac.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UMGameController_Mac.xcdatamodel; sourceTree = "<group>"; };
+		850154561D110E6600225562 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8501545B1D110E6600225562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8501547F1D13FA0C00225562 /* UMBonjourConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UMBonjourConnection.swift; sourceTree = "<group>"; };
+		850161801D2E1CEA0089102E /* UMGameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UMGameController.swift; sourceTree = "<group>"; };
+		85061E441D5836D900C1B870 /* UMCBCentral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UMCBCentral.swift; sourceTree = "<group>"; };
+		851751011D533A7700E633F9 /* UMVHIDDevice_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMVHIDDevice_iOS.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/UltimateMasterGameController-afrlntpjepclbdbvrziyppvodomb/Build/Products/Debug-iphoneos/UMVHIDDevice_iOS.framework"; sourceTree = "<group>"; };
+		855DF2041D438770002A5766 /* UMCBPeripheral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UMCBPeripheral.swift; sourceTree = "<group>"; };
+		855DF21B1D532A3B002A5766 /* UMVHIDDevice_Mac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMVHIDDevice_Mac.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/UltimateMasterGameController-afrlntpjepclbdbvrziyppvodomb/Build/Products/Debug/UMVHIDDevice_Mac.framework"; sourceTree = "<group>"; };
+		85634D611D9B77F900253A31 /* UMVHIDDevice_Mac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UMVHIDDevice_Mac.framework; path = ../Build/Products/Debug/UMVHIDDevice_Mac.framework; sourceTree = "<group>"; };
+		85634D661D9F84AC00253A31 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		8564A5FA1D3B5D1D00B25C13 /* MenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
+		8577202C1D65A32D0011CA71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		858C156F1D93AB430028F815 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		8591EED41D30E5A0000C9469 /* UMGameControllerButtonMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UMGameControllerButtonMap.swift; sourceTree = "<group>"; };
+		8591EED71D310CC6000C9469 /* AnalogJoystick.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalogJoystick.swift; sourceTree = "<group>"; };
+		8591EEDA1D310D71000C9469 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		85C3A2C51D55DA190053EE38 /* CBUUIDS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBUUIDS.swift; sourceTree = "<group>"; };
+		85C7B7BA1D6819E900D98C6E /* UMMessage.backup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UMMessage.backup.swift; sourceTree = "<group>"; };
+		85D331B41D36486100D2618C /* UMSKNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UMSKNode.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		850153771D0ED70100225562 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				851751031D533F1200E633F9 /* UMVHIDDevice_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8501544A1D110E6600225562 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85634D621D9B77F900253A31 /* UMVHIDDevice_Mac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		850153711D0ED70100225562 = {
+			isa = PBXGroup;
+			children = (
+				851751011D533A7700E633F9 /* UMVHIDDevice_iOS.framework */,
+				855DF21B1D532A3B002A5766 /* UMVHIDDevice_Mac.framework */,
+				85C3A2C51D55DA190053EE38 /* CBUUIDS.swift */,
+				8591EED41D30E5A0000C9469 /* UMGameControllerButtonMap.swift */,
+				858C156F1D93AB430028F815 /* MyPlayground.playground */,
+				850153C51D0EDBAD00225562 /* UMGameController-Networking */,
+				8501537C1D0ED70100225562 /* UMGameController-iOS */,
+				8501544E1D110E6600225562 /* UMGameController-Mac */,
+				8501537B1D0ED70100225562 /* Products */,
+				85634D601D9B77F800253A31 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8501537B1D0ED70100225562 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8501537A1D0ED70100225562 /* UMGameController_iOS.app */,
+				8501544D1D110E6600225562 /* UMGameController_Mac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8501537C1D0ED70100225562 /* UMGameController-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				85D331B41D36486100D2618C /* UMSKNode.swift */,
+				8591EED71D310CC6000C9469 /* AnalogJoystick.swift */,
+				8501537D1D0ED70100225562 /* AppDelegate.swift */,
+				8501537F1D0ED70100225562 /* GameScene.sks */,
+				8591EEDA1D310D71000C9469 /* GameScene.swift */,
+				8564A5FA1D3B5D1D00B25C13 /* MenuScene.swift */,
+				850153811D0ED70100225562 /* GameScene backup.swift */,
+				850153831D0ED70100225562 /* GameViewController.swift */,
+				85634D661D9F84AC00253A31 /* UserData.swift */,
+				850153851D0ED70100225562 /* Main.storyboard */,
+				850153881D0ED70100225562 /* Assets.xcassets */,
+				8501538A1D0ED70100225562 /* LaunchScreen.storyboard */,
+				8501538D1D0ED70100225562 /* Info.plist */,
+			);
+			name = "UMGameController-iOS";
+			path = UMGameController;
+			sourceTree = "<group>";
+		};
+		850153C51D0EDBAD00225562 /* UMGameController-Networking */ = {
+			isa = PBXGroup;
+			children = (
+				850153C61D0EDC6600225562 /* UMMessage.swift */,
+				85C7B7BA1D6819E900D98C6E /* UMMessage.backup.swift */,
+				850153C81D0EDC9000225562 /* UMBonjourBrowser.swift */,
+				850154471D100E0C00225562 /* UMBonjourServer.swift */,
+				8501547F1D13FA0C00225562 /* UMBonjourConnection.swift */,
+				855DF2041D438770002A5766 /* UMCBPeripheral.swift */,
+				85061E441D5836D900C1B870 /* UMCBCentral.swift */,
+			);
+			name = "UMGameController-Networking";
+			sourceTree = "<group>";
+		};
+		8501544E1D110E6600225562 /* UMGameController-Mac */ = {
+			isa = PBXGroup;
+			children = (
+				8501544F1D110E6600225562 /* AppDelegate.swift */,
+				850154511D110E6600225562 /* ViewController.swift */,
+				850161801D2E1CEA0089102E /* UMGameController.swift */,
+				850154561D110E6600225562 /* Assets.xcassets */,
+				8577202B1D65A32D0011CA71 /* Main.storyboard */,
+				8501545B1D110E6600225562 /* Info.plist */,
+				850154531D110E6600225562 /* UMGameController_Mac.xcdatamodeld */,
+			);
+			path = "UMGameController-Mac";
+			sourceTree = "<group>";
+		};
+		85634D601D9B77F800253A31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85634D611D9B77F900253A31 /* UMVHIDDevice_Mac.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		850153791D0ED70100225562 /* UMGameController_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 850153A61D0ED70100225562 /* Build configuration list for PBXNativeTarget "UMGameController_iOS" */;
+			buildPhases = (
+				850153761D0ED70100225562 /* Sources */,
+				850153771D0ED70100225562 /* Frameworks */,
+				850153781D0ED70100225562 /* Resources */,
+				851751051D533F1200E633F9 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UMGameController_iOS;
+			productName = UMGameController;
+			productReference = 8501537A1D0ED70100225562 /* UMGameController_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8501544C1D110E6600225562 /* UMGameController_Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 850154721D110E6600225562 /* Build configuration list for PBXNativeTarget "UMGameController_Mac" */;
+			buildPhases = (
+				850154491D110E6600225562 /* Sources */,
+				8501544A1D110E6600225562 /* Frameworks */,
+				8501544B1D110E6600225562 /* Resources */,
+				85634D5B1D9A6EC500253A31 /* ShellScript */,
+				85634D5F1D9B77D300253A31 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UMGameController_Mac;
+			productName = "UMGameController-Mac";
+			productReference = 8501544D1D110E6600225562 /* UMGameController_Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		850153721D0ED70100225562 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = fOrest;
+				TargetAttributes = {
+					850153791D0ED70100225562 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = RRLLY977UV;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					8501544C1D110E6600225562 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 850153751D0ED70100225562 /* Build configuration list for PBXProject "UMGameController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 850153711D0ED70100225562;
+			productRefGroup = 8501537B1D0ED70100225562 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				850153791D0ED70100225562 /* UMGameController_iOS */,
+				8501544C1D110E6600225562 /* UMGameController_Mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		850153781D0ED70100225562 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				850153801D0ED70100225562 /* GameScene.sks in Resources */,
+				8501538C1D0ED70100225562 /* LaunchScreen.storyboard in Resources */,
+				850153891D0ED70100225562 /* Assets.xcassets in Resources */,
+				850153871D0ED70100225562 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8501544B1D110E6600225562 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8577202D1D65A32D0011CA71 /* Main.storyboard in Resources */,
+				850154571D110E6600225562 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		85634D5B1D9A6EC500253A31 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo 'test'";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		850153761D0ED70100225562 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8591EEDB1D310D72000C9469 /* GameScene.swift in Sources */,
+				850153821D0ED70100225562 /* GameScene backup.swift in Sources */,
+				8591EED81D310CC6000C9469 /* AnalogJoystick.swift in Sources */,
+				850153C71D0EDC6600225562 /* UMMessage.swift in Sources */,
+				850153841D0ED70100225562 /* GameViewController.swift in Sources */,
+				850154801D13FA0C00225562 /* UMBonjourConnection.swift in Sources */,
+				8564A5FB1D3B5D1D00B25C13 /* MenuScene.swift in Sources */,
+				8591EED51D30E5A0000C9469 /* UMGameControllerButtonMap.swift in Sources */,
+				8501537E1D0ED70100225562 /* AppDelegate.swift in Sources */,
+				850154481D100E0C00225562 /* UMBonjourServer.swift in Sources */,
+				855DF2081D52F54E002A5766 /* UMCBPeripheral.swift in Sources */,
+				85D331B51D36486100D2618C /* UMSKNode.swift in Sources */,
+				85C7B7BB1D6819E900D98C6E /* UMMessage.backup.swift in Sources */,
+				85634D671D9F84AC00253A31 /* UserData.swift in Sources */,
+				85061E451D5836D900C1B870 /* UMCBCentral.swift in Sources */,
+				850153C91D0EDC9000225562 /* UMBonjourBrowser.swift in Sources */,
+				85C3A2C61D55DA190053EE38 /* CBUUIDS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		850154491D110E6600225562 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				850154551D110E6600225562 /* UMGameController_Mac.xcdatamodeld in Sources */,
+				8591EED61D30E5A0000C9469 /* UMGameControllerButtonMap.swift in Sources */,
+				850161811D2E1CEA0089102E /* UMGameController.swift in Sources */,
+				850154521D110E6600225562 /* ViewController.swift in Sources */,
+				855DF20D1D52F847002A5766 /* UMCBPeripheral.swift in Sources */,
+				85C7B7BC1D6819E900D98C6E /* UMMessage.backup.swift in Sources */,
+				8501547B1D11102000225562 /* UMBonjourBrowser.swift in Sources */,
+				85C3A2C71D55DA190053EE38 /* CBUUIDS.swift in Sources */,
+				850154811D13FA0C00225562 /* UMBonjourConnection.swift in Sources */,
+				85061E461D5836D900C1B870 /* UMCBCentral.swift in Sources */,
+				8501547C1D11102400225562 /* UMMessage.swift in Sources */,
+				8501547D1D11102800225562 /* UMBonjourServer.swift in Sources */,
+				850154501D110E6600225562 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		850153851D0ED70100225562 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				850153861D0ED70100225562 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8501538A1D0ED70100225562 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8501538B1D0ED70100225562 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8577202B1D65A32D0011CA71 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8577202C1D65A32D0011CA71 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		850153A41D0ED70100225562 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(CONFIGURATION_BUILD_DIR)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		850153A51D0ED70100225562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(CONFIGURATION_BUILD_DIR)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		850153A71D0ED70100225562 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = RRLLY977UV;
+				INFOPLIST_FILE = UMGameController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fOrest.UMGameController;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		850153A81D0ED70100225562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = RRLLY977UV;
+				INFOPLIST_FILE = UMGameController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fOrest.UMGameController;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		850154731D110E6600225562 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "UMGameController-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fOrest.UMGameController-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		850154741D110E6600225562 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "UMGameController-Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fOrest.UMGameController-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		850153751D0ED70100225562 /* Build configuration list for PBXProject "UMGameController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				850153A41D0ED70100225562 /* Debug */,
+				850153A51D0ED70100225562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		850153A61D0ED70100225562 /* Build configuration list for PBXNativeTarget "UMGameController_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				850153A71D0ED70100225562 /* Debug */,
+				850153A81D0ED70100225562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		850154721D110E6600225562 /* Build configuration list for PBXNativeTarget "UMGameController_Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				850154731D110E6600225562 /* Debug */,
+				850154741D110E6600225562 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		850154531D110E6600225562 /* UMGameController_Mac.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				850154541D110E6600225562 /* UMGameController_Mac.xcdatamodel */,
+			);
+			currentVersion = 850154541D110E6600225562 /* UMGameController_Mac.xcdatamodel */;
+			path = UMGameController_Mac.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 850153721D0ED70100225562 /* Project object */;
+}
