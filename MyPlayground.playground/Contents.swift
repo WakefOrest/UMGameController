@@ -1,6 +1,7 @@
 //: Playground - noun: a place where people can play
 
-import Cocoa
+//import Cocoa
+import UIKit
 import Foundation
 
 var str = "Hello, playground"
@@ -48,8 +49,6 @@ var str = "Hello, playground"
 //    
 //    memcpy(&header2, bytes + 22, MemoryLayout<UMMessageHeader>.size)
 //}
-//
-//header2
 
 
 

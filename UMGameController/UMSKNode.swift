@@ -9,8 +9,8 @@
 import Foundation
 import SpriteKit
 import UIKit
-import AVFoundation
 import AudioToolbox
+//import AVFoundation
 
 protocol UMSKNodeDelegate: class {
      
@@ -23,10 +23,11 @@ protocol UMSKNodeDelegate: class {
     func umSKNode(_ node: UMSKNode, touchesCancelled touches: Set<UITouch>?, withEvent event: UIEvent?)
 }
 
+@available(iOS 10.0, *)
 class UMSKNode: SKSpriteNode {
 
     var delegate: UMSKNodeDelegate?
-    
+
     var isValidTouchAreaInNode: ((_ node: SKNode?, _ touches: Set<UITouch>) ->Bool)?
     
     var renderTexture: (() ->Void)?
@@ -40,13 +41,13 @@ class UMSKNode: SKSpriteNode {
     var isIneracting: Bool = false
     
     var soundId: SystemSoundID = 0
-    
+        
     override init(texture: SKTexture?, color: UIColor, size: CGSize) {
         
         super.init(texture: texture, color: color, size: size)
         
         isUserInteractionEnabled = true
-
+        
         let audioUrl = URL(fileURLWithPath: "/System/Library/Audio/UISounds/Tock.caf")
         AudioServicesCreateSystemSoundID(audioUrl as CFURL, &soundId)
         
@@ -131,6 +132,7 @@ class UMSKNode: SKSpriteNode {
         touchPointer = CGPoint(x: position.x - beganPosition.x, y: position.y - beganPosition.y)
         delegate?.umSKNode(self, touchesMoved: touches, withEvent: event)
     }
+    
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         //
         if !isValidBeganArea {
@@ -150,4 +152,5 @@ class UMSKNode: SKSpriteNode {
         isIneracting = false
         delegate?.umSKNode(self, touchesCancelled: touches, withEvent: event)
     }
+    
 }
